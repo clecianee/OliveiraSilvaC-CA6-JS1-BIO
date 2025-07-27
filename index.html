@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cleciane Oliveira Silva">
+    <title>Bear Ninja Hunter</title>
+</head>
+
+<body>
+
+    <h1>Bear Ninja Hunter</h1>
+    <p id="gameResults">Waiting player input...</p>
+
+    <script>
+// ask the user to enter name
+            let username = prompt('To start the game, please enter your name: ');
+// confirming the username that was informed
+            let alertmessage = `you have entered: ${username}`;
+// player pick one option to play
+            let playerTurn = prompt("Pick one: Bear, Ninja, or Hunter");
+// computer hard coded to bear
+            let computerTurn = "Bear";
+// confirming all the info entered
+            let message = `Hello, ${username}! You picked ${playerTurn}. The computer picked ${computerTurn}.`;
+// output to the page
+            document.getElementById("gameResults").innerHTML = message;
+// final results
+            console.log(`${username} chose ${playerTurn}, Computer chose ${computerTurn}.`);
+    </script>
+     
+</body>
+</html>
